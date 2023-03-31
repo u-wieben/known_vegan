@@ -1,4 +1,4 @@
-﻿@import url('fonts.css');
+@import url('fonts.css');
 @import url('colors.css');
 
 body {
@@ -54,7 +54,18 @@ h1 {
 }
 
 .contentWindow {
-	background-color: var(--KVBGWindow); 
 	color: var(--KVColor4); 
 }
+
+	.contentWindow > h2 {
+		background-color: var(--KVColor1); 
+		margin:0; 
+		font-size: 1rem; 
+		font-style: italic; 
+		font-weight: 200; 
+	}
+
+	.contentWindow > p {
+		background-color: var(--KVBGWindow); 
+	}
 

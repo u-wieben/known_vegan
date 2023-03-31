@@ -1,7 +1,7 @@
 import { Link } from "../../node_modules/react-router-dom/dist/index";
 import Emotion from "./images/emotion.png"; 
 
-export default function FooterNav() {
+export default function FooterNav() { 
 	return (
 		<>
       <nav className="navbar navbar-expand-lg position-relative">

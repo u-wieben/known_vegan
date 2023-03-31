@@ -10,7 +10,7 @@ import Privacy from "./privacy/Privacy";
 import NewRecipe from "./newrecipe/NewRecipe";
 import Page404 from "./error/Page404";
 
-function App() {
+function App() { 
   return (<>
     <HeaderNav />
       <Content>
