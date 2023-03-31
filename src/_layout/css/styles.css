@@ -1,0 +1,43 @@
+﻿@import url('fonts.css');
+@import url('colors.css');
+
+body {
+	background-image: url(../images/hintergrund.png);
+	background-color: var(--KVBGColor);
+	background-blend-mode: multiply;
+	background-position: center;
+	background-size: cover;
+	font-family: Poppins;
+	font-weight: 200;
+}
+
+.navbar {
+	background-color: var(--KVBGColor);
+	color: var(--KVColor4);
+}
+
+.nav-link {
+	color: var(--KVColor4); 
+}
+
+.active {
+	color: var(--KVColor4);
+}
+
+h1 {
+	font-size: 2rem;
+	font-weight: 400;
+	font-style: italic;
+	color: var(--KVColor4);
+	margin: 0;
+	padding: 0;
+	line-height: 2.2rem;
+}
+
+.emotion {
+	width: 18vw; 
+	position: absolute; 
+	left: 0; 
+	bottom: 0; 
+}
+
