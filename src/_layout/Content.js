@@ -1,6 +1,7 @@
-export default function Content() {
+export default function Content({children}) {
 	return (<>
-		<main className="flex-grow-1">
+		<main className="d-flex justify-content-around align-items-center container-fluid flex-grow-1 overflow-auto">
+			{children}
 		</main>
 	</>); 
 }

@@ -20,6 +20,14 @@ body {
 	color: var(--KVColor4); 
 }
 
+	.nav-link:hover, .nav-link:focus {
+		color: var(--KVColor5) !important;
+	}
+
+	.nav-link:active {
+		color: var(--KVColor5) !important;
+	}
+
 .active {
 	color: var(--KVColor4);
 }
@@ -39,5 +47,14 @@ h1 {
 	position: absolute; 
 	left: 0; 
 	bottom: 0; 
+}
+
+.copyright {
+	font-size: 0.75rem; 
+}
+
+.contentWindow {
+	background-color: var(--KVBGWindow); 
+	color: var(--KVColor4); 
 }
 
