@@ -1,3 +1,4 @@
+import { Link } from "../../node_modules/react-router-dom/dist/index";
 import Emotion from "./images/emotion.png"; 
 
 export default function FooterNav() {
@@ -12,20 +13,20 @@ export default function FooterNav() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown2">
             <ul className="navbar-nav ms-auto me-5">
               <li className="nav-item ms-3 ms-3">
-                <a className="nav-link" href="/">Kontakt/Impressum</a>
+                <Link to="/impressum" className="nav-link">Kontakt/Impressum</Link>
               </li>
               <li className="nav-item ms-3 ms-3">
-                <a className="nav-link" href="/">Cookies</a>
+                <Link to="/cookies" className="nav-link">Cookies</Link>
               </li>
               <li className="nav-item ms-3 ms-3">
-                <a className="nav-link" href="/">Datenschutz</a>
+                <Link to="/datenschutz" className="nav-link">Datenschutz</Link>
               </li>
               <li className="nav-item ms-3 ms-3">
-                <a className="nav-link" href="/">Neues Rezept eintragen</a>
+                <Link to="/neuesRezept" className="nav-link">Neues Rezept eintragen</Link>
               </li>
             </ul>
           </div>
-          <span className="fw-lighter">&copy; 2023 Known Vegan GmbH</span>
+          <span className="copyright">&copy; 2023 Known Vegan GmbH</span>
         </div>
       </nav>			
 		</>); 

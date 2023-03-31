@@ -1,0 +1,8 @@
+.hero {
+	width: 20rem;
+	height: 20rem;
+	background-color: var(--KVColor4);
+	border-radius: 0.3rem;
+	color: var(--KVColor1);
+	font-weight: 400; 
+}
