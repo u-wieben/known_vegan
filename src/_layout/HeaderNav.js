@@ -1,4 +1,4 @@
-﻿import { ReactComponent as Logo } from './images/logo.svg';
+import { ReactComponent as Logo } from './images/logo.svg';
 
 export default function HeaderNav() {
 	return (

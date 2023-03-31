@@ -12,7 +12,6 @@
     <BuildOutputFolder>$(MSBuildProjectDirectory)\build</BuildOutputFolder>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\error\" />
     <Folder Include="src\filter\" />
     <Folder Include="src\details\" />
     <Folder Include="src\list\" />
