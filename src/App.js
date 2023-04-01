@@ -9,6 +9,7 @@ import Cookies from "./cookies/Cookies";
 import Privacy from "./privacy/Privacy";
 import NewRecipe from "./newrecipe/NewRecipe";
 import Page404 from "./error/Page404";
+import Filter from "./filter/Filter";
 
 function App() { 
   return (<>
@@ -21,6 +22,7 @@ function App() {
             <Route path="cookies" element={<Cookies />} /> 
             <Route path="datenschutz" index element={<Privacy />} /> 
             <Route path="neuesRezept" index element={<NewRecipe />} /> 
+            <Route path="filter" index element={<Filter />} /> 
             <Route path="*" index element={<Page404 />} /> 
           </Route>
         </Routes>
