@@ -2,37 +2,32 @@ const FilterDef = [
   {
     catID: 1,
     cat: "Länder",
-    checked: [
-      { itemID: 1, item: "Deutschland" },
-      { itemID: 2, item: "Frankreich" },
-    ],
-    unchecked: [
-      { itemID: 3, item: "Senegal" },
-      { itemID: 4, item: "Polen" },
+    filters: [
+      { itemID: 1, item: "Deutschland", checked: true },
+      { itemID: 2, item: "Frankreich", checked: true },
+      { itemID: 3, item: "Senegal", checked: false },
+      { itemID: 4, item: "Polen", checked: false },
     ]
   },
   {
     catID: 2,
     cat: "Aufwand",
-    checked: [
-      { itemID: 5, item: "Einfach" },
-      { itemID: 6, item: "Alltagstauglich" },
-      { itemID: 7, item: "Aufwändiges Menü" }
-    ],
-    unchecked: [
-      { itemID: 8, item: "Eintopf" }
+    filters: [ 
+      { itemID: 5, item: "Einfach", checked: true },
+      { itemID: 6, item: "Alltagstauglich", checked: true },
+      { itemID: 7, item: "Aufwändiges Menü", checked: false },
+      { itemID: 8, item: "Eintopf", checked: false },
+      { itemID: 13, item: "Pfannengericht", checked: false }
     ]
   },
   {
     catID: 3,
     cat: "Tageszeit",
-    checked: [
-      { itemID: 9, item: "Frühstück" },
-      { itemID: 10, item: "Snack" }
-    ],
-    unchecked: [
-      { itemID: 11, item: "Mittag" },
-      { itemID: 12, item: "Abendessen" }
+    filters: [ 
+      { itemID: 9, item: "Frühstück", checked: true },
+      { itemID: 10, item: "Snack", checked: true },
+      { itemID: 11, item: "Mittag", checked: false },
+      { itemID: 12, item: "Abendessen", checked: false }
     ]
   }
 ]; 

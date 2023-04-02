@@ -65,7 +65,6 @@ h1 {
 		font-weight: 200; 
 	}
 
-	.contentWindow > p {
+	.contentWindow > div {
 		background-color: var(--KVBGWindow); 
 	}
-
