@@ -1,7 +1,6 @@
 import "./_layout/css/styles.css"; 
 
 import { Navigate, Route, Routes } from "../node_modules/react-router-dom/dist/index";
-import CookieHandler from 'universal-cookie';
 
 import FooterNav from "./_layout/FooterNav";
 import HeaderNav from "./_layout/HeaderNav";
@@ -14,14 +13,10 @@ import NewRecipe from "./newrecipe/NewRecipe";
 import Page404 from "./error/Page404";
 import Filter from "./filter/Filter";
 
-const cookies = new CookieHandler(); 
-const userToken = cookies.get("token"); 
-
 export default function App() { 
   console.log("APP Aufruf"); 
   return (
     <>
-      { console.log("APP: Vor HeaderNav") }
       <HeaderNav />
       <Content>
         <Routes>
@@ -35,10 +30,8 @@ export default function App() {
             <Route path="*" index element={<Page404 />} /> 
           </Route>
         </Routes>
-        {!userToken && <Navigate to="/cookies" />}
       </Content>
       <FooterNav />
-      {console.log("APP: Nach FooterNav")}
     </>
   );
 }
