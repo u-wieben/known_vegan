@@ -15,7 +15,6 @@ import Filter from "./filter/Filter";
 import ListSection from './list/ListSection';
 
 export default function App() { 
-  console.log("APP Aufruf"); 
   return (
     <>
       <HeaderNav />
