@@ -1,40 +1,43 @@
 import { useEffect, useState } from "react";
+import axios from "../../node_modules/axios/index";
 import "./css/filter.css"
-import FilterDef from "./MockData.js"; 
 
 export default function Filter() {
-	const [currentFilter, setCurrentFilter] = useState(FilterDef); 
+	const [currentFilter, setCurrentFilter] = useState(); 
 
 	useEffect(() => {
-		console.log("update"); 
-	}, [currentFilter]); 
+		async function getData() {
+			const result = await axios('http://localhost:5000/filter');
+			setCurrentFilter(result.data.data.filterdefs); 
+		}
+		getData(); 
+	},[]);
 
 	const addFilter = (id, checked) => {
 		let current = currentFilter; 
 		current.map((cat) => {
-			let ind = cat.filters.findIndex((obj => obj.id == id)); 
-			(ind > -1) && (cat.filters[ind].checked = checked); 
+			let ind = cat.filter.findIndex((obj => obj.id == id)); 
+			(ind > -1) && (cat.filter[ind].checked = checked); 
 		})
 		setCurrentFilter([...current]);
 	}
 
   return (
-    <div className="filter p-3">
-			{
-				currentFilter.map((cat) =>
+		<div className="filter p-3">
+			{ (currentFilter !== undefined) && currentFilter.map((cat) =>
 					<div key={cat.id}>
 						<div>
 							{cat.descr}
 						</div>
 						<div>
-							{cat.filters.map((item) => (item.checked == true) &&
+							{cat.filter.map((item) => (item.checked == true) &&
 								<div key={item.id} onClick={() => addFilter(item.id, false)}>
 									X {item.descr}
 								</div> 
 							)}
 						</div>
 						<div>
-							{cat.filters.map((item) => (item.checked == false) &&
+							{cat.filter.map((item) => (item.checked == false) &&
 								<div key={item.id} onClick={() => addFilter(item.id,true) }>
 									- {item.descr}
 								</div> 
