@@ -14,7 +14,6 @@ import Page404 from "./error/Page404";
 import Filter from "./filter/Filter";
 
 export default function App() { 
-  console.log("APP Aufruf"); 
   return (
     <>
       <HeaderNav />
