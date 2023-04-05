@@ -12,9 +12,9 @@ import Privacy from "./privacy/Privacy";
 import NewRecipe from "./newrecipe/NewRecipe";
 import Page404 from "./error/Page404";
 import Filter from "./filter/Filter";
+import ListSection from './list/ListSection';
 
 export default function App() { 
-  console.log("APP Aufruf"); 
   return (
     <>
       <HeaderNav />
@@ -28,6 +28,7 @@ export default function App() {
             <Route path="neuesRezept" index element={<NewRecipe />} /> 
             <Route path="filter" index element={<Filter />} /> 
             <Route path="*" index element={<Page404 />} /> 
+            <Route path='/Rezepte' index element={<ListSection />} />
           </Route>
         </Routes>
       </Content>

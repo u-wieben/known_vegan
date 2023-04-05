@@ -1,0 +1,46 @@
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    position: relative;
+    height: 400px;
+    width: 300px;
+    margin: 10px;
+  }
+  
+  .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .overlayBackground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.726);
+    padding: 10px;
+  }
+  
+  .card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .card-text {
+    color: #fff;
+    font-size: 16px;
+  }
+  
+  .text-center {
+    color: white;
+  }
+  
+  .fixieren {
+    position: fixed;
+  }
