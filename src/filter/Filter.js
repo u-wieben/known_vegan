@@ -22,9 +22,9 @@ export default function Filter() {
 			filterStr = ""; 
 			filterTodo.map((item) => filterStr = filterStr + "," + item);
 			filterStr = (filterStr != "") ? filterStr.substring(1) : ""; 
-			console.log('http://localhost:5000/filter/count?filter=' + filterStr); 
-			// const result = await axios('http://localhost:5000/filter/count?filter='+filterStr);
-			// setCurrentFilter(result.data.data.filterdefs);
+			console.log('http://localhost:5000/filter/count/' + filterStr); 
+			const result = await axios('http://localhost:5000/recipes/count/'+filterStr);
+			setRecipesCount(result.data.data[0].count); 
 		}
 		getData(); 
 	}, [filterTodo]);
