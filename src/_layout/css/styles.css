@@ -11,6 +11,10 @@ body {
 	font-weight: 200;
 }
 
+main {
+	background-color: white;
+}
+
 .navbar {
 	background-color: var(--KVBGColor);
 	color: var(--KVColor4);

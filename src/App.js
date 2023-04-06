@@ -13,6 +13,7 @@ import NewRecipe from "./newrecipe/NewRecipe";
 import Page404 from "./error/Page404";
 import Filter from "./filter/Filter";
 import ListSection from './list/ListSection';
+import RezeptDetails from "./details/rezeptDetails";
 
 export default function App() { 
   return (
@@ -29,6 +30,7 @@ export default function App() {
             <Route path="filter" index element={<Filter />} /> 
             <Route path="*" index element={<Page404 />} /> 
             <Route path='/Rezepte' index element={<ListSection />} />
+            <Route path='/details' index element={<RezeptDetails />} />
           </Route>
         </Routes>
       </Content>
