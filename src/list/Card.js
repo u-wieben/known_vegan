@@ -22,7 +22,7 @@ export default function Card() {
           <img src={`${process.env.PUBLIC_URL}/essen/${data.thumbnail}`} alt="rezeptBild" />
           <div className="card-img-overlay d-flex flex-column justify-content-end">
             <div className="overlayBackground">
-              <h5 className="card-title">{data.dish_name}</h5>
+              <h5 className="card-title"><NavLink to={`/details/${data.id}`}>{data.dish_name}</NavLink></h5>
               <p className="card-text">{data.description_short}</p>
             </div>
           </div>
